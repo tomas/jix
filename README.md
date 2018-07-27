@@ -6,10 +6,10 @@
 
 It's similar to `tig` but different in a few ways:
 
- - It lets you stage or unstaged files partially, on a line-per-line basis. 
+ - It lets you stage or unstage files *partially*, on a line-per-line basis. 
  - It lets you amend to your latest commit in case you missed something, or squash until a certain point.
  - It has great mouse support. You can click on commits or files, and bring context menus by right clicking on them.
- - It has a good keyboard support as well. You can drive most of the UI with your arrow keys, tab and spacebar (i.e. no need to remember which key shows the staging area). 
+ - It has a good keyboard support as well. You can drive most of the UI simply with your arrow keys, tab and spacebar. Yep, no need to remember which key shows the staging area.
  - It uses `libgit2` under the hood which means it's a) usually faster and b) doesn't depend on your local installation of `git`.
  - It's distributed as a single fat binary, so besides libc there are no other dependencies.
 
