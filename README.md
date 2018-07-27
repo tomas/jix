@@ -2,9 +2,9 @@
   <img src="https://raw.githubusercontent.com/tomas/jix/master/screenshot.png" alt="Jix log view" />
 </p>
 
-`jix` is a command line, standalone client for Git, focused on commit insertion rather than just navigation. In other words, it's meant to help you craft better commits, for a better coding experience as a developer (in team or in solo mode).
+`jix` is a command line, standalone client for Git, focused on commit insertion rather than just navigation. In other words, it's meant to help you manage your commit history, and craft better commits without having to type any commands by hand.
 
-It's similar to tig but different in a few ways:
+It's similar to `tig` but different in a few ways:
 
  - It lets you stage or unstaged files partially, on a line-per-line basis. 
  - It lets you amend to your latest commit in case you missed something, or squash until a certain point.
