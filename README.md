@@ -4,7 +4,7 @@
 
 `jix` is a command line, standalone client for Git, focused on commit insertion (rather than simply browsing). In other words, it's meant to help you manage your history and craft better commits in a simple way, without having to type any commands by hand.
 
-It's similar to `tig` but different in a few, key aspects:
+It's similar to `tig` but different in a few aspects:
 
  - It lets you stage or unstage *partial sections* of your files, on a line-by-line basis. 
  - It lets you amend to your latest commit in case you missed something, or squash until a certain point.
