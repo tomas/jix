@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tomas/jix/master/screenshot.png" alt="Jix log view" />
+  <img src="https://raw.githubusercontent.com/tomas/jix/master/jix-screencast.gif" alt="Jix quick demo" />
 </p>
 
 `jix` is a command line, standalone client for Git, focused on commit insertion rather than just navigation. In other words, it's meant to help you manage your commit history and craft better commits, without having to type any commands by hand.
