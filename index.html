@@ -1,0 +1,206 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Tomas Pollak">
+  <meta name="description" content="Simple software that helps you deal with everyday issues.">
+
+  <title>Jix | A better way to Git on the command line</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://tomas.github.io/skel.css/dist/0.3/skel.min.css' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url(bg-pattern.png),#2a3135;
+      /*background: url(bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);*/
+      background: url(bg-pattern.png),linear-gradient(to left,#4f6076,#2a3135);
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 34px;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      padding-top: 20px;
+      margin: 40px 0 20px;
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+
+    p, li {
+      line-height: 150%;
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: cyan;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    code {
+      padding: 0 2px;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: cyan;
+      border: none;
+    }
+
+    input, select, label {
+      font-size: 15px;
+    }
+
+    button.primary {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #fff;
+      color: #fff;
+    }
+
+    button.primary:hover {
+      color: cyan !important;
+      border-color: cyan !important;
+    }
+
+    #box {
+      margin: 150px auto 0;
+      padding: 0 20px;
+      max-width: 1072px;
+    }
+
+    #logo a {
+      width: 220px;
+      height: 94px;
+      display: inline-block;
+      text-indent: -9999px;
+      background: url(i/fork-logo-flat.png) no-repeat;
+    }
+
+    #content {
+      color: #fff;
+      max-width: 600px;
+      margin: 0 auto 100px;
+      padding: 0 20px;
+    }
+
+    #content p, #content li {
+      font-size: 18px;
+    }
+
+    .repo-desc {
+      font-size: 20px;
+    }
+
+    .screencast {
+      max-height: 450px;
+      overflow-y: hidden;
+      border-bottom: 1px solid #ccc;
+      margin: 40px 0;
+    }
+
+    .screencast img {
+      width: 100%;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="box" class="clearfix">
+
+  <div style="text-align: center">
+    <h1 style="margin-bottom: 0px">Jix</h1>
+    <p class="repo-desc">A better way to Git</h2>
+  </div>
+
+  <div class="screencast">
+    <img src="jix-screencast-2.gif" alt="Jix screencast" />
+  </div>
+
+  <div id="content">
+
+    <h2>What is it?</h2>
+
+    <p><code class="highlighter-rouge">jix</code> is a command line, standalone client for Git, focused on commit insertion (rather than simply browsing/inspection). In other words, it’s meant to help you manage your history and craft better commits in a simple way, without having to type any commands by hand.</p>
+
+    <p>It’s similar to <code class="highlighter-rouge">tig</code> but different in a few aspects:</p>
+
+    <ul>
+      <li>It lets you stage or unstage <em>partial sections</em> of your files, on a line-by-line basis.</li>
+      <li>It lets you amend to your latest commit in case you missed something, or squash until a certain point.</li>
+      <li>It has great mouse support. You can click on commits or files, and bring context menus by right clicking on them.</li>
+      <li>It has a good keyboard support as well. You can drive most of the UI simply with your arrow keys, tab and spacebar. Yep, no need to remember which key shows the status view.</li>
+      <li>It uses <code class="highlighter-rouge">libgit2</code> under the hood which means a) it doesn’t depend on your local installation of <code class="highlighter-rouge">git</code>, and b) it’s somewhat faster, althout this isn’t one of the main goals.</li>
+      <li>It’s distributed as a single fat binary, so besides libc and libm there are no other dependencies.</li>
+    </ul>
+
+    <h2>Is it open source?</h2>
+
+    <p>Yep. The repo hasn't been made public yet, but you can star it <a href="https://github.com/tomas/jix">on Github</a>.</p>
+
+    <h2>Where to get it?</h2>
+
+    <p>It's not out yet, but on its way! If you want to get notified when released, enter your email address below and I'll let you know when it does.</p>
+
+    <script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { }"></iframe>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd_Im4aNbrQSIgvx9R4rn-doawxCxU7lM2JfsS5Lk0CXrNVMA/formResponse" method="POST" onsubmit="submitted=true;" class="grid" style="margin-top: 40px">
+
+      <p class="width-40">
+        <label for="email-input">Email</label>
+        <input type="email" name="emailAddress" placeholder="user@email.com" />
+      </p>
+
+      <p class="width-30">
+        <label for="os-input">Your primary work OS</label>
+        <select style="background: #fff" name="entry.224692132" id="os-input">
+          <option value="Windows">Windows</option>
+          <option value="Mac">macOS</option>
+          <option value="Linux">Linux</option>
+          <option value="Other">Other</option>
+        </select>
+      </p>
+
+      <!--<p style="display: none">
+        <label>Which other OS?</label>
+        <input name="entry.224692132.other_option_response">
+      </p>-->
+
+      <p class="width-30">
+        <label>&nbsp;</label>
+        <button style="width: 100%; padding: 0" class="primary" type="submit">Sign me up!</button>
+      </p>
+    </form>
+
+<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_Im4aNbrQSIgvx9R4rn-doawxCxU7lM2JfsS5Lk0CXrNVMA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+
+    <h2>Who are you?</h2>
+
+    <p>I'm Tomás Pollak, a journalist/developer living in Valdivia, Chile (on the northern tip of Patagonia, that is). I have a beautiful wife and two daughters, and I run a hosted e-commerce platform called <a href="https://bootic.io">Bootic</a>.</p>
+
+    <h2>Can I get involved?</h2>
+
+    <p>Sure you can! If you'd like to contribute somehow to the project, Drop me a note at tomas@forkhq.com any time.</p>
+
+  </div>
+
+</div><!-- /box -->
+</body>
+</html>
