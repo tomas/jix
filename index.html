@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Tomas Pollak">
-  <meta name="description" content="Simple software that helps you deal with everyday issues.">
 
   <title>Jix | A better way to Git on the command line</title>
 
@@ -15,7 +14,7 @@
     body {
       background: url(bg-pattern-dark.png),#2a3135;
       /*background: url(bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);*/
-      background: url(bg-pattern-dark.png),linear-gradient(to left,#4f6076,#2a3135);
+      background: url(bg-pattern-dark.png),linear-gradient(to left,#504865,#2a3135);
       font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
       color: #e1ecef;
     }
@@ -181,35 +180,42 @@
 
     <p>It's not out yet, but on its way! If you want to get notified when it does, enter your email address below and I'll send you a quick note.</p>
 
-    <script type="text/javascript">var submitted=false;</script>
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { }"></iframe>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd_Im4aNbrQSIgvx9R4rn-doawxCxU7lM2JfsS5Lk0CXrNVMA/formResponse" method="POST" style="margin-top: 40px">
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd_Im4aNbrQSIgvx9R4rn-doawxCxU7lM2JfsS5Lk0CXrNVMA/formResponse" method="POST" onsubmit="submitted=true;" class="grid" style="margin-top: 40px">
+      <div class="grid">
 
-      <p class="width-40">
-        <label for="email-input">Email</label>
-        <input type="email" name="emailAddress" placeholder="user@email.com" />
+        <p class="width-40">
+          <label for="email-input">Email</label>
+          <input type="email" name="emailAddress" placeholder="user@email.com" onchange="document.getElementById('form-comment-row').style.display = 'block'" />
+        </p>
+
+        <p class="width-30">
+          <label for="os-input">Your primary work OS</label>
+          <select style="background: #fff" name="entry.224692132" id="os-input">
+            <option value="Mac">macOS</option>
+            <option value="Linux">Linux</option>
+            <option value="Windows">Windows</option>
+            <option value="Other">Other</option>
+          </select>
+        </p>
+
+        <!--<p style="display: none">
+          <label>Which other OS?</label>
+          <input name="entry.224692132.other_option_response">
+        </p>-->
+
+        <p class="width-30">
+          <label>&nbsp;</label>
+          <button style="width: 100%; padding: 0" class="primary" type="submit">Sign me up!</button>
+        </p>
+
+      </div>
+
+      <p id="form-comment-row" style="display: none">
+        <label>Any comments?</label>
+        <input type="text" name="entry.63806613" placeholder="Use this to suggest a feature" />
       </p>
 
-      <p class="width-30">
-        <label for="os-input">Your primary work OS</label>
-        <select style="background: #fff" name="entry.224692132" id="os-input">
-          <option value="Mac">macOS</option>
-          <option value="Linux">Linux</option>
-          <option value="Windows">Windows</option>
-          <option value="Other">Other</option>
-        </select>
-      </p>
-
-      <!--<p style="display: none">
-        <label>Which other OS?</label>
-        <input name="entry.224692132.other_option_response">
-      </p>-->
-
-      <p class="width-30">
-        <label>&nbsp;</label>
-        <button style="width: 100%; padding: 0" class="primary" type="submit">Sign me up!</button>
-      </p>
     </form>
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_Im4aNbrQSIgvx9R4rn-doawxCxU7lM2JfsS5Lk0CXrNVMA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
