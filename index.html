@@ -19,9 +19,9 @@
     }
 
     body {
-      background: url(bg-pattern.png),#2a3135;
+      background: url(bg-pattern-dark.png),#2a3135;
       /*background: url(bg-pattern.png),-webkit-linear-gradient(to left,#7b4397,#dc2430);*/
-      background: url(bg-pattern.png),linear-gradient(to left,#4f6076,#2a3135);
+      background: url(bg-pattern-dark.png),linear-gradient(to left,#4f6076,#2a3135);
       font-family: 'Source Sans Pro', sans-serif;
       color: #fff;
     }
@@ -46,6 +46,10 @@
       margin-bottom: 18px;
     }
 
+    li {
+      list-style: circle outside;
+    }
+
     a {
       color: cyan;
     }
@@ -65,15 +69,20 @@
       font-size: 15px;
     }
 
+    label {
+      /*color: rgba(194, 255, 250, 0.7);*/
+      color: #a2f1f1;
+    }
+
     button.primary {
       background: rgba(255, 255, 255, 0.1);
-      border-color: #fff;
-      color: #fff;
+      border-color: cyan;
+      color: cyan;
     }
 
     button.primary:hover {
-      color: cyan !important;
-      border-color: cyan !important;
+      color: #fff !important;
+      border-color: #fff !important;
     }
 
     #box {
@@ -152,11 +161,11 @@
 
     <h2>Is it open source?</h2>
 
-    <p>Yep. The repo hasn't been made public yet, but you can star it <a href="https://github.com/tomas/jix">on Github</a>.</p>
+    <p>Yep. The code hasn't been made public yet, but you can star it <a href="https://github.com/tomas/jix">on Github</a>.</p>
 
     <h2>Where to get it?</h2>
 
-    <p>It's not out yet, but on its way! If you want to get notified when released, enter your email address below and I'll let you know when it does.</p>
+    <p>It's not out yet, but on its way! If you want to get notified when it does, enter your email address below and I'll send you a quick note.</p>
 
     <script type="text/javascript">var submitted=false;</script>
      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { }"></iframe>
@@ -193,13 +202,13 @@
 
     <h2>Who are you?</h2>
 
-    <p>I'm Tomás Pollak, a journalist/developer living in Valdivia, Chile (on the northern tip of Patagonia, that is). I have a beautiful wife and two daughters, and I run a hosted e-commerce platform called <a href="https://bootic.io">Bootic</a>.</p>
+    <p>I'm Tomás Pollak, a journalist/developer living in Valdivia, Chile (on the northern tip of Patagonia, that is). I have a wife and two beautiful daughters, and I run a hosted e-commerce platform called <a href="https://bootic.io">Bootic</a>.</p>
 
     <p><a href="https://github.com/tomas">This</a> is my Github profile, if you want to check it out.</p>
 
     <h2>Can I get involved?</h2>
 
-    <p>Sure you can! If you'd like to contribute somehow to the project, Drop me a note at tomas@forkhq.com any time.</p>
+    <p>Sure you can! If you'd like to contribute somehow to the project, <a href="mailto:tomas@forkhq.com">drop me a note</a> any time.</p>
 
   </div>
 
