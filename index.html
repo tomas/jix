@@ -143,18 +143,18 @@
 
     <h2>What is it?</h2>
 
-    <p><code class="highlighter-rouge">jix</code> is a command line, standalone client for Git, focused on commit insertion (rather than simply browsing or inspection). In other words, it’s meant to help you manage your history and craft better commits in a simple way, without having to type any commands by hand.</p>
-
-    <p>It's similar to <code class="highlighter-rouge">tig</code> but different in a few aspects:</p>
+    <p><code class="highlighter-rouge">jix</code> is a standalone Git client for your terminal, focused on commit insertion (rather than simply browsing or inspection). In other words, it’s meant to help you manage your history and craft better commits in a simple way, without having to type any commands by hand.</p>
 
     <ul>
-      <li>It lets you stage or unstage <em>partial sections</em> of your files, on a line-by-line basis.</li>
+      <li>It lets you quickly stage or unstage <em>partial sections</em> of your files, on a line-by-line basis.</li>
       <li>It lets you amend to your latest commit in case you missed something, or squash until a certain point.</li>
       <li>It has great mouse support. You can click on commits or files, and bring context menus by right clicking on them.</li>
-      <li>It has pretty good keyboard support as well. You can drive most of the UI simply with your arrow keys, tab and spacebar. Yep, no need to remember which key shows the status view.</li>
-      <li>It uses <code class="highlighter-rouge">libgit2</code> under the hood which means a) it doesn’t depend on your local installation of <code class="highlighter-rouge">git</code>, and b) it’s somewhat faster, althout this isn’t one of the main goals.</li>
+      <li>It has pretty good keyboard support as well. You can drive most of the UI simply with your arrow keys, tab and spacebar.</li>
+      <li>It uses <code class="highlighter-rouge">libgit2</code> under the hood which means it doesn’t depend on your local installation of <code class="highlighter-rouge">git</code></li>
       <li>It’s distributed as a single fat binary, so besides libc and libm there are no other dependencies.</li>
     </ul>
+
+    <p>It draws a lot of inspiration from <code class="highlighter-rouge">tig</code>, but also from graphical tools like `gitg` and `GitX`.</p>
 
     <h2>What language or framework is it written in?</h2>
 
